@@ -6,5 +6,5 @@ base_path=$(dirname $dir_path)
 if hash docker-compose 2>/dev/null; then
     docker-compose -f ${base_path}/conf/docker-compose.yml -d
 else
-    docker run -d --privileged -p 8080:8080 bmswens/mjpg-streamer-raspbian:latest
+    docker run -d --privileged -v /opt/vc:/opt/vc -p 8080:8080 bmswens/mjpg-streamer-raspbian:latest
 fi

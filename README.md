@@ -1,4 +1,4 @@
-# openGardener
+# mjpg-streamer-raspbian
 
 
 ## Getting Started
