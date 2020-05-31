@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+
+  mjpg-streamer-raspbian:
+    container_name: mjpg-streamer
+    image: bmswens/mjpg-streamer-raspbian:latest
+    privileged: true
+    # the following is included as an example of how to modify; but is already the default
+    environment:
+      - "HEIGHT=720"
+      - "WIDTH=1280"
+    ports:
+      - "8080:8080"
+
