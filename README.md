@@ -20,18 +20,18 @@ or you can build it yourself using the supplied dockerfile.
 bash bin/build.sh
 ```
 
-### Running
+## Running
 
 You can either run it with docker-compose or docker.
 Recommended use is with docker-compose and using ```bin/run.sh```.
 
-#### docker-compose
+### docker-compose
 
 For docker-compose please modfiy the file at ```conf/docker-compose.yml``` according to your needs.
 
 Once you have modified the compose file you may ```cd conf && docker-compose up``` or you can ```bash bin/run.sh```.
 
-#### docker run
+### docker run
 
 ```bin/run.sh``` has a docker run command in it if docker-compose is not installed.
 
